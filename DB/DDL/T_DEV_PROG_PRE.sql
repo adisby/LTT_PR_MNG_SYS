@@ -1,0 +1,12 @@
+DROP TABLE `PRMNGSYS`.`T_DEV_PROG_PRE`;
+CREATE TABLE IF NOT EXISTS `PRMNGSYS`.`T_DEV_PROG_PRE` (
+  `appr_code` VARCHAR(14) NOT NULL COMMENT '审批编号',
+  `prog_type` VARCHAR(5) NULL DEFAULT NULL COMMENT '种类',
+  `usr_amt_pre` INT(11) NULL DEFAULT NULL COMMENT '预计发展用户数',
+  `discnt_income_pre` DECIMAL(17,2) NULL DEFAULT NULL COMMENT '折扣后收入预测',
+  `commission` DECIMAL(17,2) NULL DEFAULT NULL COMMENT '佣金',
+  `production_time` VARCHAR(5) NULL DEFAULT NULL COMMENT '投产时间',
+  PRIMARY KEY (`appr_code`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COMMENT = '预计发展规划表';
