@@ -1,2 +1,0 @@
-# sails
-### a Sails application
